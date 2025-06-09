@@ -1,48 +1,82 @@
 # Climate Data Analysis Project
 
-## 项目描述
-这个项目是AAE 718（Data Science for Agricultural and Applied Economics）课程的第三个项目作业。项目主要关注气候数据的分析，使用来自多个气象站的长期气候数据来研究特定的气候变化模式。
+## Project Description
+This project is the third assignment for AAE 718 (Data Science for Agricultural and Applied Economics) course. The project focuses on analyzing climate data from multiple weather stations to study climate change patterns.
 
-## 数据要求
-- 使用至少4个气象站的数据
-- 每个站点至少需要10年的数据
-- 数据来源：[NOAA气候数据](https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/v3.30/)
+## Data Requirements
+- Data from at least 4 weather stations
+- At least 10 years of data from each station
+- Data source: [NOAA Climate Data](https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/v3.30/)
 
-## 项目结构
+## Project Structure
 ```
 .
-├── .gitignore          # Git忽略文件配置
-├── README.md           # 项目说明文档
-├── report.md           # 项目报告
-├── images/             # 图表和可视化结果
-└── data/              # 数据文件（如果文件较小）
+├── .gitignore          # Git ignore configuration
+├── README.md           # Project documentation
+├── report.md           # Analysis report
+├── images/             # Generated plots and visualizations
+├── data/              # Data files (if size permits)
+├── climate_analysis.py # Main analysis script
+├── download_data.py    # Data download script
+└── requirements.txt    # Python dependencies
 ```
 
-## 运行说明
-1. 克隆此仓库：
+## Running Instructions
+1. Clone this repository:
    ```bash
    git clone https://github.com/KingsleyYe1014/-Project-03.git
    cd -Project-03
    ```
 
-2. 创建并激活Python虚拟环境：
+2. Create and activate Python virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # Linux/Mac
-   # 或
+   # or
    .\venv\Scripts\activate  # Windows
    ```
 
-3. 安装依赖：
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## 项目报告
-完整的项目报告请查看 [report.md](report.md)。
+4. Download data:
+   ```bash
+   python download_data.py
+   ```
 
-## 作者
-[Your Name]
+5. Run analysis:
+   ```bash
+   python climate_analysis.py
+   ```
 
-## 许可证
-MIT License 
+## Analysis Components
+1. Temperature Trends Analysis
+   - Annual mean temperature changes
+   - Seasonal temperature variations
+
+2. Precipitation Analysis
+   - Annual precipitation patterns
+   - Extreme precipitation events
+
+3. Seasonal Analysis
+   - Changes in season length
+   - Seasonal temperature patterns
+
+4. Heat Wave Analysis
+   - Frequency of heat waves
+   - Duration and intensity trends
+
+## Results
+The complete analysis results can be found in [report.md](report.md). Key findings include:
+- Temperature trends across Wisconsin
+- Changes in precipitation patterns
+- Seasonal variations
+- Heat wave frequency analysis
+
+## Author
+[KingsleyYe1014]
+
+## License
+MIT License
