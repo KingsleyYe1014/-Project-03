@@ -6,7 +6,6 @@ This project is the third assignment for AAE 718 (Data Science for Agricultural 
 ## Data Source
 The data used in this project comes from the NOAA Global Historical Climatology Network-Daily (GHCN-D) database. Due to the large size of the data files, they are not included in this repository. You can access the data files from the following locations:
 
-- [Download Link (Google Drive)](YOUR_GOOGLE_DRIVE_LINK_HERE)
 - Original Source: [NOAA Climate Data](https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/v3.30/)
 
 ## Project Structure
@@ -15,7 +14,6 @@ The data used in this project comes from the NOAA Global Historical Climatology 
 ├── .gitignore          # Git ignore configuration
 ├── README.md           # Project documentation
 ├── report.md           # Detailed analysis report in markdown format
-├── images/            # Generated plots and visualizations
 ├── climate_analysis.py # Main analysis script
 ├── download_data.py    # Data download and preprocessing script
 └── requirements.txt    # Python dependencies
